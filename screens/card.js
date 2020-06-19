@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 
 function Card({ route, navigation }) {
@@ -7,7 +7,7 @@ function Card({ route, navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <Text>CAPTION: {JSON.stringify(caption)}</Text>
-            {/* both images don't load, I figured they need to be cashed and found few solutions which I had to spend some time, but at this point I went beyond recomended 2 hours for this challenge.*/}
+            {/* both images won't load, I figured they need to be cashed, but since my app is in expo, it wouldn't work, and I found few solutions which I had to spend some time on, but at this point I went beyond recomended 2 hours for this challenge.*/}
 
             <Image
                 style={{ height: 100, width: 100 }}
